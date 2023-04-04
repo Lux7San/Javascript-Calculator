@@ -24,7 +24,7 @@ const inputNumber = (number) => {
     }
 }
 
-const operator = document.querySelectorAll(".operator");
+const operator = document.querySelectorAll('.operator');
 
 operator.forEach((operator) => {
     operator.addEventListener("click", (event) => {
@@ -62,6 +62,9 @@ const calculate = () => {
         case '/':
             result = prevNumber / currentNumber
             break
+        case '%':
+            result = (prevNumber * currentNumber) / 100
+            break
         default:
             break
     }
@@ -96,3 +99,4 @@ decimal.addEventListener('click', (event) => {
     inputDecimal(event.target.value)
     updateScreen(currentNumber)
 })
+
