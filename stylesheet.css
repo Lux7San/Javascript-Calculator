@@ -1,3 +1,7 @@
+.container {
+  padding-top: 20px;
+}
+
 .calculator {
     text-align: center;
     margin: 0 auto;
