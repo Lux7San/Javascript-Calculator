@@ -29,7 +29,7 @@ const inputNumber = (number) => {
     }
 }
 
-const operator = document.querySelectorAll('.operator');
+const operator = document.querySelectorAll('.operator, .percentage');
 
 operator.forEach((operator) => {
     operator.addEventListener("click", (event) => {
